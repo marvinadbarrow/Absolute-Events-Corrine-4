@@ -77,6 +77,7 @@ padding: 0px 0px;
 .nav-ul li{
   position: relative;
   float: left;
+  
 }
 
 .nav-link{
@@ -91,38 +92,66 @@ padding: 0px 0px;
 
 
 .services-list{
+  display: none;
   position: absolute;
   font-size: 20px;
   width: 250px;
   padding: 2px 2px;
   left: 0;
+  top: 0px;
   background-color: rgba(240, 234, 229, 0);
   box-shadow: 0 20px 45px black;
-  transition: all ease 0.5s;
-}
-
-.main-nav ul li ul{
-  display: none;
+  transition: transform 2s ease-in-out;
+  z-index: 200;  
   border-radius: 10px;
+  /* all ease 0.5s,  */
+
 }
 
-.main-nav ul li:hover > ul{
-  display: block;
-  transition: all ease 0.9s;
-  
-}
+/* list elements in services list menu*/
 .services-list li{
   width: 100%;
   background-color: rgb(240, 234, 229);
-  box-shadow: 0px 2px 3px rgba(56, 56, 56, 0.774);
-  padding: 20px;
+border-radius: 10px;
+padding: 20px;
+  }
+/* when hovering over the list items they go dark and text becomes white*/
+  .services-list li:hover{
+    background-color: rgb(78, 75, 75);
+    color: white;
+    transition: all ease 0.5s;
+   }
+
+.service-content{
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  padding: 5px;
+  background-color: rgb(240, 234, 229);
+  border-radius: 10px;
+  box-shadow: 0 20px 45px black;
+  /* transition: all ease 0.5s; */
+
 }
-.services-list li:hover{
-  background-color: rgb(78, 75, 75);
-  color: white;
 
- }
 
+.transform-menu{
+  display:block; 
+  transform: translateY(40px);
+}
+/* I think the below code means; when you hover over the navbar ul list item (those are the five main links, e.g. contacts, testimonails...etc), do this to any nested 'ul' elements - display block... since the only navbar ul list item that has a ul element nested is the service ul... that appears... I think this is how it works*/
+
+
+/* .main-nav ul li:hover  ul{
+
+  display: block;
+  transform: translateY(40px);
+} */
+
+
+
+
+ 
 
 /**
 
@@ -185,3 +214,20 @@ padding: 0px 0px;
   @media(max-width:999) {
     
   }
+
+
+
+
+
+  @keyframes slideDown {
+    0% { 
+      opacity: 0;
+      transform: translateY(-60px)
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0)
+    }
+  }
+  
