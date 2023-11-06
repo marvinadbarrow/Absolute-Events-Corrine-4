@@ -98,10 +98,11 @@ padding: 0px 0px;
   width: 250px;
   padding: 2px 2px;
   left: 0;
-  top: 0px;
+  top: 10px;
   background-color: rgba(240, 234, 229, 0);
   box-shadow: 0 20px 45px black;
-  transition: transform 2s ease-in-out;
+
+  transition: transform 2s ease;
   z-index: 200;  
   border-radius: 10px;
   /* all ease 0.5s,  */
@@ -137,7 +138,8 @@ padding: 20px;
 
 .transform-menu{
   display:block; 
-  transform: translateY(40px);
+  transform: translateY(35px);
+
 }
 /* I think the below code means; when you hover over the navbar ul list item (those are the five main links, e.g. contacts, testimonails...etc), do this to any nested 'ul' elements - display block... since the only navbar ul list item that has a ul element nested is the service ul... that appears... I think this is how it works*/
 
@@ -218,16 +220,17 @@ padding: 20px;
 
 
 
-
+/* NOTE the keyframes below are the raw commands that are to be executed on the element, but element needs parameters such as duration, ease in and ease out, repeat number or infinite etc. */
   @keyframes slideDown {
     0% { 
       opacity: 0;
-      transform: translateY(-60px)
+      transform: translateY(0px)
     }
-  
+
+
     100% {
       opacity: 1;
-      transform: translateY(0)
+      transform: translateY(35px)
     }
   }
   

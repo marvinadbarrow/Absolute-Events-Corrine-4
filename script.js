@@ -9,6 +9,7 @@ console.log(serviceList)
 
 serviceEl.addEventListener('mouseover', (event) =>{
   event.preventDefault()
+  serviceList.style.animation = 'slideDown 0.7s ease-in-out 1'
   serviceList.classList.add('transform-menu')
  })
 
