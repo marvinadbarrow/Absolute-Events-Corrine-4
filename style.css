@@ -9,7 +9,7 @@ background-size: cover;
 background-position: center;
 }
 
-
+button{  transition: all ease 0.5s;}
 .about{margin-top:0px; position: relative;}
 
 .float-btn{font-size: 20px;}
@@ -36,7 +36,7 @@ footer{width: 100%; background-color: rgb(2, 2, 2); display: flex; flex-directio
 .nav-logo-footer{width: 100%;}
 .fa-lg{margin-right: 10px;}
 .testimonials-container{display: flex; flex-direction: row; justify-content: space-between;}
-.t-cards{width: 25%; padding: 1%; border-radius: 15px; position: relative; background-color: rgb(36, 36, 36);  box-shadow: 2px 2px 20px rgb(7, 7, 7); }
+.t-cards{width: 25%; padding: 1%; border-radius: 15px; position: relative; background-color: rgb(36, 36, 36);  box-shadow: 2px 2px 20px rgb(7, 7, 7);   transition: all ease 0.9s;}
 .copyright-wrapper{width: fit-content; height: auto; margin: auto;background-color: rgba(0, 128, 0, 0);}
 .copyright-para{font-size: 18px; color: white;}
 .card-background{width: 93%; height: 93%; background-color: rgb(255, 0, 0); position: absolute; z-index: -1;  opacity: 0.5; border-radius: 5px;}
@@ -84,7 +84,10 @@ padding: 0px 0px;
   padding: 20px;
   border-radius: 5px;
 }
-.nav-link:hover{background-color: rgb(240, 234, 229);}
+.nav-link:hover{
+  background-color: rgb(240, 234, 229);
+  transition: all ease 0.5s;
+}
 
 
 .services-list{
@@ -94,14 +97,18 @@ padding: 0px 0px;
   padding: 2px 2px;
   left: 0;
   background-color: rgba(240, 234, 229, 0);
+  box-shadow: 0 20px 45px black;
+  transition: all ease 0.5s;
 }
 
 .main-nav ul li ul{
   display: none;
+  border-radius: 10px;
 }
 
 .main-nav ul li:hover > ul{
   display: block;
+  transition: all ease 0.9s;
   
 }
 .services-list li{
