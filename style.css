@@ -234,3 +234,30 @@ padding: 20px;
     }
   }
   
+  .nav_dark{
+    background-color: rgb(29, 28, 28);
+    color: white;
+  }
+
+.nav_light{
+  background-color: rgba(212, 200, 194, 0.756);
+  color: black;
+}
+  @keyframes darkNav {
+    0% { 
+      background-color: rgba(212, 200, 194, 0.756);
+    }
+    100% {
+      background-color: rgb(29, 28, 28);
+    }
+  }
+
+  @keyframes lighNav {
+    0% { 
+      background-color: rgb(29, 28, 28);
+    }
+    100% {
+
+      background-color: rgba(212, 200, 194, 0.756);
+    }
+  }
